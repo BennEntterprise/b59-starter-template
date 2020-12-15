@@ -1,3 +1,8 @@
+# B59 Starter Kit
+
+To Get just the .vscode settings run
+`wget -L https://github.com/BennEntterprise/b59-starter-template/tree/main/.vscode`
+
 ### Extensions In The Workspace
 
 1. Prettier
