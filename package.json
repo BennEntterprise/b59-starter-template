@@ -4,12 +4,12 @@
   "description": "A starter template for B59 Full Stack Typescript Projects",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-server": "node ./dist/server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bennentterprise/b59-starter-template.git",
-    "dev-server": "node ./dist/server.js"
+    "url": "git+https://github.com/bennentterprise/b59-starter-template.git"
   },
   "author": "Kyle Bennett",
   "license": "ISC",
