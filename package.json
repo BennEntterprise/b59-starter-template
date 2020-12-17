@@ -1,0 +1,19 @@
+{
+  "name": "b59-starter-template",
+  "version": "1.0.0",
+  "description": "A starter template for B59 Full Stack Typescript Projects",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennentterprise/b59-starter-template.git"
+  },
+  "author": "Kyle Bennett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bennentterprise/b59-starter-template/issues"
+  },
+  "homepage": "https://github.com/bennentterprise/b59-starter-template#readme"
+}

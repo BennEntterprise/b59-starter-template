@@ -16,6 +16,10 @@ To Get just the .vscode settings run
 9. Debugger for FireFox
 10. REST Client
 
+### Dependencies
+
+node-sass (look up the way to migrate to dart-sass)
+
 # First Draft (To Be Carved up and Rewritten)
 
 The Problem:
