@@ -8,7 +8,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bennentterprise/b59-starter-template.git"
+    "url": "git+https://github.com/bennentterprise/b59-starter-template.git",
+    "dev-server": "node ./dist/server.js"
   },
   "author": "Kyle Bennett",
   "license": "ISC",
