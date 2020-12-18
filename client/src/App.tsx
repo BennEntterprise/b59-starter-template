@@ -3,6 +3,8 @@ import axios, { AxiosError } from 'axios'
 import logo from './logo.svg'
 import './App.css'
 
+import { B59Navbar } from './components/B59Navbar'
+
 const App = () => {
   const [pingSuccess, setPingSuccess] = useState(false)
   useEffect(() => {
@@ -16,24 +18,27 @@ const App = () => {
   }`
 
   return (
-    <div className='App'>
-      <header className='App-header'>
-        <img src={logo} className='App-logo' alt='logo' />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className='App-link'
-          href='https://reactjs.org'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          Learn React
-        </a>
+    <>
+      <B59Navbar />
+      <div className='App' style={{ height: '1800px' }}>
+        <header className='App-header'>
+          <img src={logo} className='App-logo' alt='logo' />
+          <p>
+            Edit <code>src/App.tsx</code> and save to reload.
+          </p>
+          <a
+            className='App-link'
+            href='https://reactjs.org'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Learn React
+          </a>
 
-        <h6>{connectionMessage}</h6>
-      </header>
-    </div>
+          <h6>{connectionMessage}</h6>
+        </header>
+      </div>
+    </>
   )
 }
 
