@@ -4,7 +4,7 @@ import logo from './logo.svg'
 import './App.css'
 
 import { B59Navbar } from './components/B59Navbar'
-
+import { B59Footer } from './components/B59Footer/B59Footer'
 const App = () => {
   const [pingSuccess, setPingSuccess] = useState(false)
   useEffect(() => {
@@ -37,6 +37,7 @@ const App = () => {
 
           <h6>{connectionMessage}</h6>
         </header>
+        <B59Footer />
       </div>
     </>
   )
