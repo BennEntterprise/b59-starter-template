@@ -20,46 +20,50 @@ To Get just the .vscode settings run
 
 node-sass (look up the way to migrate to dart-sass)
 
+# About the Kit
+
 # First Draft (To Be Carved up and Rewritten)
 
 The Problem:
 As a developer with tons of ideas I need a way to rapidly build prototypes using a familiar technology stack. It will be using products I already know and thus allow me to skip some of the monotonous overhead of a project and get to the specifics of actually developing something cool.
 
-Eventually I would love for this to be a bash script that clones a repo that is set up. For now this document will serve as the jumping off point.
-
-It describes the Stack
-It points to tutorials/checklists required to set up each part of this stack start/finish.
+Eventually I'll tie my own personal bash(already WIP) script to this repo. That will mean I can run something like `./scaffold-project <project-name>` and get a clean project with a repo including a main and develop branch. Cutting the tooling overhead time down to zero means that I can write domain level code rather than focusing on infrastructure and deployment tidbits.
 
 # Client Side Code
 
-React Scaffolded with CRA, (Unejected)
-Redux for Application State Management
-Axios for Network Requests
-Bootstrap as Framework for Sites
-Jest Testing Framework for React Components.
+- React Scaffolded with CRA and a typescript template, (Unejected)
+- Redux for Application State Management, Redux-Thunk and Redux-Sagas to handle side effects.
+- Axios for Network Requests
+- React-Bootstrap (and thus bootstrap) as UIFramework for Sites
+- Jest Testing Framework for React Components. (TDD)
+- Storybook for React Components (DDD)
 
 # Server Side Code
 
-NodeJS, Mongoose ORM and MongoDB
-API Scaffold for User Resource
-Reade
-Create
-Delete
-Update Profile
-Forgot Password Functionality
-Presets for API integration with
-Twillio for SMS/Call
-Mailtrap To Test Forms
-Nodemailer to Send Emails
-More as we need them.
-Script to Start Local MongoDB
-Cloudinary for Image/Video Storage
-Scripts to Deploy to Staging/Production
-Scripts to Open a tunnel for ngrok.
-Workspace Settings/Tools
-Preferred Extensions
+- Node: Written in Typescript and compiled using a tsconfig file (eventual will build a server side webpack).
+- Mongoose ORM To make connections with a MongoDB Instance.
+- MongoDB will need a connection string to either a hosted DB instance (preferred) or a local instance (for situations where an internet connection is unobtainable like flights or long drives)
+- REST API Scaffolded with
+  - User Resource (including authorization authentication and password reset; best practices for hashing)
+  - Profile Resource
+  - Twillio for SMS
+  - NodeMailer to send emails
+  - Mailtrap to catch emails in modes other than production
+
+# Scripts you'll find at the top level package.json file
+
+- A Script to Start Local MongoDB
+- Scripts to Deploy to Staging/Production Heroku Instances
+- A script to Open a tunnel for ngrok. (useful for testing sites on mobile without an emulator)
 
 # Usersnippets
 
-.vscode editor settings
-Common Links
+There are some snippets that I've come to use for a pretty good workflow. Some useful things will include:
+
+- `breakpts` --> Used to scaffold empty media queries based on the breakpoints in bootstrap
+- `star20` --> Builds a comment header to label section of code. (Don't get too comfortable with this one and forget about modularity/code-splitting)
+- `flex-column` --> Scaffolds the 4 css rules for a center justified and aligned column directional flexbox
+- `star20` --> Builds a comment header to label section of code. (Don't get too comfortable with this one and forget about modularity/code-splitting)
+- `flex-row` --> Scaffolds the 4 css rules for a center justified and aligned row directional flexbox
+
+CONTACT: If you have additional questions about this project you can contact me at [kyle.bennett@betweenfiveandnine.com](mailto:kyle.bennett@betweenfiveandnine.com?subject=B59%20Starter)
