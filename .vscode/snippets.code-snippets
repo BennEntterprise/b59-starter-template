@@ -20,28 +20,19 @@
   "20 Star Comment": {
     "scope": "css, scss",
     "prefix": "star20",
-    "body": [
-      "/********************/",
-      "/*$1*/",
-      "/********************/",
-      "$0"
-    ],
-    "description": "Adds a comment section header to the piece"
+    "description": "Adds a comment section header to the piece",
+    "body": ["/********************/", "/*$1*/", "/********************/", "$0"]
   },
   "20 Star": {
     "scope": "typescript,javascript, javascriptreact,typescriptreact",
     "prefix": "star20",
-    "body": [
-      "/********************/",
-      "/*$1*/",
-      "/********************/",
-      "$0"
-    ],
-    "description": "Adds a comment section header to the piece"
+    "description": "Adds a comment section header to the piece",
+    "body": ["/********************/", "/*$1*/", "/********************/", "$0"]
   },
   "breakpoints": {
     "scope": "css,scss,sass",
     "prefix": "breakpts",
+    "description": "Scaffolds the Standard Bootstrap breakpoints",
     "body": [
       "/********************/",
       "/* Adjustment for XS Size Screen*/",
@@ -49,17 +40,17 @@
       "@media (max-width: 576px) {",
       "}",
       "/********************/",
-      "/* Adjustment for SM Size Screen*/",
+      "/* Adjustment for SM Size Screen mp=(672px)*/",
       "/********************/",
       "@media (min-width: 576px) and (max-width: 768px) {",
       "}",
       "/********************/",
-      "/* Adjustment for MD Size Screen*/",
+      "/* Adjustment for MD Size Screen mp=(880px)*/",
       "/********************/",
       "@media (min-width: 768px) and (max-width: 992px) {",
       "}",
       "/********************/",
-      "/* Adjustment for LG Size Screen*/",
+      "/* Adjustment for LG Size Screen mp=(1096px)*/",
       "/********************/",
       "@media (min-width: 992px) and (max-width: 1200px) {",
       "}",
@@ -68,7 +59,30 @@
       "/********************/",
       "@media (min-width: 1200px) {",
       "}"
-    ],
-    "description": "Scaffolds the Standard Bootstrap breakpoints"
+    ]
+  },
+  "Flex-Col": {
+    "scope": "css,scss,sass",
+    "prefix": "flex-column",
+    "description": "Scaffolds a centered column flexbox element",
+    "body": [
+      "// FlexStuff",
+      "display: flex;",
+      "flex-direction: column;",
+      "justify-content: center;",
+      "align-items: center;"
+    ]
+  },
+  "Flex-Row": {
+    "scope": "css,scss,sass",
+    "prefix": "flex-row",
+    "description": "Scaffolds a centered column flexbox element",
+    "body": [
+      "// FlexStuff",
+      "display: flex;",
+      "flex-direction: row;",
+      "justify-content: center;",
+      "align-items: center;"
+    ]
   }
 }
